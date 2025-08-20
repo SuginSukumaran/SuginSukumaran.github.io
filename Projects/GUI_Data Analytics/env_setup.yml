@@ -1,0 +1,19 @@
+name: oopEnv
+dependencies:
+- python=3.10
+- pip
+- pip:
+  - pandas==2.2.3
+  - numpy==1.26.4
+  - matplotlib==3.9.2
+  - scikit-learn==1.4.2
+  - Django==5.1.4
+  - djangorestframework
+  - requests
+  - matplotlib
+  - catboost==1.2.7
+  - xgboost==2.1.2
+  - tensorflow==2.16.1
+  - statsmodels==0.14.4
+  - customtkinter
+  - seaborn
