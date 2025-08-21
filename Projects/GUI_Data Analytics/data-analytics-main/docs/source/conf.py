@@ -18,6 +18,9 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath('../../src'))
 sys.path.insert(0, os.path.abspath('../..'))
+html_baseurl = 'https://suginsukumaran.github.io/docs/project1/'
+
+html_relative_urls = False
 
 extensions = [
 'sphinx.ext.autodoc',
