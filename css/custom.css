@@ -1,0 +1,113 @@
+:root {
+    --portfolio-dark: #2f343d;
+    --portfolio-accent: #bd5d38;
+    --portfolio-light: #f8f9fa;
+    --portfolio-border: #dee2e6;
+}
+
+.resume-section-content {
+    max-width: 980px;
+}
+
+.resume-section p {
+    line-height: 1.7;
+}
+
+.resume-section ul {
+    margin-bottom: 0;
+    padding-left: 1.35rem;
+}
+
+.resume-section ul li {
+    margin-bottom: 0.7rem;
+    line-height: 1.6;
+}
+
+.subheading {
+    line-height: 1.4;
+}
+
+.text-primary {
+    color: var(--portfolio-accent) !important;
+}
+
+a {
+    color: var(--portfolio-accent);
+}
+
+a:hover,
+a:focus {
+    color: #8f4428;
+}
+
+.social-icons .social-icon:hover {
+    background-color: var(--portfolio-accent);
+}
+
+#skills .subheading {
+    color: var(--portfolio-dark);
+    font-size: 1.25rem;
+    margin-top: 1.25rem;
+}
+
+#skills p {
+    background-color: var(--portfolio-light);
+    border-left: 4px solid var(--portfolio-accent);
+    border-radius: 0.2rem;
+    padding: 0.85rem 1rem;
+}
+
+#projects .flex-grow-1,
+#experience .flex-grow-1,
+#education .flex-grow-1 {
+    min-width: 0;
+}
+
+#projects h3,
+#experience h3,
+#education h3 {
+    line-height: 1.1;
+}
+
+footer {
+    background-color: var(--portfolio-light);
+    border-top: 1px solid var(--portfolio-border);
+    color: #6c757d;
+}
+
+@media (max-width: 991.98px) {
+    .resume-section {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .resume-section-content {
+        max-width: 100%;
+    }
+
+    #skills p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .resume-section {
+        padding: 4rem 1.5rem;
+    }
+
+    .resume-section h2 {
+        font-size: 2.8rem;
+    }
+
+    .resume-section h3 {
+        font-size: 1.7rem;
+    }
+
+    .subheading {
+        font-size: 1.1rem;
+    }
+
+    .lead {
+        font-size: 1.1rem;
+    }
+}
