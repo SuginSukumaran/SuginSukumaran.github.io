@@ -276,17 +276,57 @@
                 <span class="text-primary">June 2025</span>
             </div>
         </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Bayesian Optimization for Noisy Functions</h3>
-                        <div class="subheading mb-3">Optimization of Technical Systems — TH Köln</div>
-                        <p>Developed a surrogate-based optimization workflow for a 15-parameter noisy black-box yield-function challenge. Used Gaussian Process Regression (Kriging) and Expected Improvement to select evaluations under limited-budget constraints.</p>
-                        <p><strong>Tools:</strong> Python, Gaussian Process Regression, Kriging, scikit-learn, scikit-optimize<br />
-                        <strong>Topics:</strong> Bayesian optimization, surrogate modelling, uncertainty-aware learning, exploration–exploitation trade-offs</p>
-                        <p class="mb-0"><a href="https://nbviewer.org/url/github.com/SuginSukumaran/SuginSukumaran.github.io/blob/main/client_example.ipynb" target="_blank" rel="noopener noreferrer"><i class="fas fa-book-open"></i> View Optimization Notebook</a></p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">July 2025</span></div>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">Black-Box Optimisation Using Kriging and Bayesian Methods</h3>
+
+                <div class="subheading mb-3">
+                    Optimization of Technical Systems Challenge — TH Köln
                 </div>
+
+                <img src="assets/img/blackbox-optimization.png"
+                    alt="Kriging surrogate model and Bayesian optimisation workflow for a noisy black-box problem"
+                    class="img-fluid rounded shadow project-image blackbox-project-image mb-3" />
+
+                <p>
+                    Developed a data-driven optimisation strategy for a noisy 15-parameter black-box yield-function challenge with a limited experimental budget. The objective was to identify high-yield parameter combinations while minimising costly experimental evaluations.
+                </p>
+
+                <p>
+                    Analysed historical experiment data, including repeated noisy yield measurements, parameter settings and round-by-round best results. Built a Kriging surrogate model using Gaussian Process Regression with an RBF kernel and WhiteKernel noise component to estimate both expected yield and prediction uncertainty.
+                </p>
+
+                <p>
+                    Generated candidate parameter sets across the search space and applied acquisition strategies—including Upper Confidence Bound (UCB) and Expected Improvement—to select experiments that balance exploitation of promising regions with exploration of uncertain regions. The workflow used historical data to reduce unnecessary API calls after the experimental budget was nearly exhausted.
+                </p>
+
+                <p>
+                    The project included yield-development visualisation, per-round best-result tracking, leaderboard analysis, remaining-budget monitoring and comparison of surrogate-guided candidate suggestions. It demonstrated how Bayesian optimisation can support efficient decision-making when evaluation results are noisy and experiments are expensive.
+                </p>
+
+                <p>
+                    <strong>Tools:</strong> Python, pandas, NumPy, requests, matplotlib, SciPy, scikit-learn, GaussianProcessRegressor, RBF kernel, WhiteKernel, Jupyter Notebook<br />
+                    <strong>Methods:</strong> Kriging, Gaussian Process Regression, Bayesian optimisation, Upper Confidence Bound, Expected Improvement, noisy-objective modelling, surrogate modelling, candidate sampling<br />
+                    <strong>Problem:</strong> Budget-constrained optimisation of a 15-parameter black-box yield function
+                </p>
+
+                <p class="mb-0">
+                    <a href="https://github.com/SuginSukumaran/SuginSukumaran.github.io/blob/main/docs/Blackbox/blackbox-optimization.ipynb"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                        <i class="fab fa-github"></i> View Black-Box Optimisation Notebook on GitHub
+                    </a>
+                </p>
+
+                <p class="mt-3 mb-0">
+                    <strong>Outcome:</strong> Achieved second place in the TH Köln Black-Box Optimization Challenge by applying data analysis and surrogate-based Bayesian optimisation to identify high-performing parameter regions under strict experimental-budget constraints.
+                </p>
+            </div>
+
+            <div class="flex-shrink-0">
+                <span class="text-primary">Summer 2025</span>
+            </div>
+        </div>
 
                 <div class="d-flex flex-column flex-md-row justify-content-between">
                     <div class="flex-grow-1">
