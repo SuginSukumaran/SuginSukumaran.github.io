@@ -223,3 +223,53 @@ footer {
         width: 100%;
     }
 }
+/* Typography: readable body text with technical heading style */
+body {
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+p,
+li,
+.contact-details,
+.contact-item,
+#skills p,
+.about-focus li {
+    font-family: "Inter", Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+/* Keep the original technical visual style for headings only */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-nav .nav-link,
+.subheading,
+.about-focus .subheading {
+    font-family: "Saira Extra Condensed", Arial, sans-serif;
+}
+
+/* Make About text comfortable to scan */
+#about p,
+#about .about-focus {
+    max-width: 920px;
+}
+
+#about p {
+    font-size: 1.05rem;
+}
+
+/* Use normal readable font for the technical-focus labels */
+.about-focus li strong {
+    font-family: "Inter", Arial, sans-serif;
+    font-weight: 700;
+}
