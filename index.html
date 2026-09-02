@@ -155,19 +155,35 @@
 
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0">OPC UA Security and OT Network Monitoring</h3>
-                        <div class="subheading mb-3">OT/IT Cybersecurity Case Study — TH Köln</div>
+                        <h3 class="mb-0">Secure OT File Transfer Architecture</h3>
+                        <div class="subheading mb-3">Industrial Communication and Information Security Case Study — TH Köln</div>
+
                         <img src="assets/img/opcua-security.png"
-                        alt="OPC UA security and OT network Proposed solution architecture and firewall rules"
-                        class="img-fluid rounded shadow project-image mb-3" />
+                            alt="High-level secure OPC UA file-transfer architecture between IT and OT zones"
+                            class="img-fluid rounded shadow project-image mb-3" />
+
                         <p>
-                            Designed an OPC UA file-transfer concept using AES-256 encryption and X.509 certificate-based mutual authentication. Applied Suricata IDS and Wireshark analysis to investigate OT network traffic and replay-attack detection concepts for PROFINET and Modbus TCP.
+                            Designed and validated a defense-in-depth file-transfer architecture for legacy operational technology environments. The solution replaces direct legacy file-sharing access with encrypted OPC UA-based file delivery, network segmentation, certificate-based mutual authentication and controlled staging between IT and OT zones.
                         </p>
+
                         <p>
-                            <strong>Tools:</strong> OPC UA, X.509, AES-256, SOPHOS SG 125, PROFINET, Modbus TCP<br />
-                            <strong>Topics:</strong> OT cybersecurity, IEC 62443 principles, industrial network monitoring, secure industrial communication
+                            The prototype used OPC UA security policies with encryption, integrity validation and explicit firewall-controlled communication paths. Laboratory tests verified secure end-to-end file delivery while preventing unauthorised lateral access between network zones.
+                        </p>
+
+                        <p>
+                            <strong>Tools:</strong> OPC UA, X.509 certificates, Basic256Sha256, AES-256, SHA-256, Sophos SG 125, VLAN segmentation, Streamlit, Python, SMB staging<br />
+                            <strong>Topics:</strong> OT cybersecurity, IEC 62443 principles, defense in depth, network zoning and conduits, secure file transfer, legacy-system protection
+                        </p>
+
+                        <p>
+                            <a href="docs/opcua-security/secure-ot-file-transfer-report.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                                <i class="fas fa-file-pdf"></i> View Technical Report (PDF)
+                            </a>
                         </p>
                     </div>
+
                     <div class="flex-shrink-0">
                         <span class="text-primary">2026</span>
                     </div>
