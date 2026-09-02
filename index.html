@@ -182,6 +182,61 @@
                     <div class="flex-shrink-0"><span class="text-primary">March 2026</span></div>
                 </div>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Residential PV, Battery and Grid-Interaction Simulation</h3>
+
+                        <div class="subheading mb-3">
+                            Protection, Automation and Control of Electrical Energy Systems — TH Köln
+                        </div>
+
+                        <img src="assets/img/pv-battery-simulation.png"
+                            alt="MATLAB Simulink model and results for a residential photovoltaic and battery energy system"
+                            class="img-fluid rounded shadow project-image pv-project-image mb-3" />
+
+                        <p>
+                            Developed a high-resolution MATLAB/Simulink simulation of a decentralised residential energy system comprising four households, each with photovoltaic generation, battery storage, individual load profiles and a bidirectional grid connection. The model simulated seven continuous days with a one-second fixed time step.
+                        </p>
+
+                        <p>
+                            Integrated location-specific solar-irradiance data for Gummersbach, Germany from the Open-Meteo API and processed the time series in MATLAB for Simulink workspace integration. Modelled PV generation, inverter behaviour, household demand, battery state of charge, grid import/export and aggregated neighbourhood energy flows using the CARNOT Toolbox.
+                        </p>
+
+                        <p>
+                            Evaluated how load diversity, PV generation and battery configuration affect grid reliance, PV self-consumption and tariff-based energy cost. In the battery-tuning study, a larger 5 kWh battery with 80% initial state of charge achieved zero grid import for the tested household configuration, while a smaller 2 kWh battery increased grid dependence.
+                        </p>
+
+                        <p>
+                            Implemented time-of-use tariff logic using a MATLAB Function block to calculate import cost and export credit. The analysis showed that household demand patterns and battery sizing significantly influence energy independence and economic performance, even without an active real-time optimisation controller.
+                        </p>
+
+                        <p>
+                            <strong>Tools:</strong> MATLAB, Simulink, CARNOT Toolbox, MATLAB Function blocks, Open-Meteo API, workspace data integration, data visualisation<br />
+                            <strong>Methods:</strong> PV and battery modelling, state-of-charge analysis, time-domain simulation, load-profile analysis, grid import/export analysis, tariff calculation, battery parameter tuning<br />
+                            <strong>System:</strong> Four-household residential PV-battery neighbourhood model simulated for seven days at one-second resolution
+                        </p>
+
+                        <p>
+                            <a href="docs/pv-battery-simulation/pv-battery-simulation-report.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                                <i class="fas fa-file-pdf"></i> View IEEE Technical Report (PDF)
+                            </a>
+                        </p>
+
+                        <p class="small text-muted mb-3">
+                            Collaborative academic project with Aniket Narendra Bagade, TH Köln.
+                        </p>
+
+                        <p class="mb-0">
+                            <strong>Outcome:</strong> Built and evaluated a multi-household PV-battery simulation that demonstrated the impact of irradiance, consumption behaviour and battery sizing on self-consumption, grid dependence and time-of-use energy costs.
+                        </p>
+                </div>
+
+                <div class="flex-shrink-0">
+                    <span class="text-primary">April 2025</span>
+                </div>
+            </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div class="flex-grow-1">
                     <h3 class="mb-0">Physics-Informed Neural Networks for Vehicle Side-Slip Estimation</h3>
 
