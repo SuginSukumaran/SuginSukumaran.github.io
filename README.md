@@ -1,4 +1,4 @@
-# Sugin Sukumaran | Automation & IT Engineering Portfolio
+# Sugin Sukumaran | Automation & Industrial IT Engineering Portfolio
 
 [Visit my portfolio](https://suginsukumaran.github.io/)
 
