@@ -100,7 +100,7 @@ figure figcaption {
 }
 
 .cnc-image-card:not(.cnc-image-card-first) {
-    flex: 0 1 45%;
+    flex: 0 1 55%;
 }
 
 .cnc-image-card img {
