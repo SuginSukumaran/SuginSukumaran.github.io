@@ -149,7 +149,7 @@ footer {
 }
 
 .cnc-image-card:not(.cnc-image-card-first) {
-    flex: 1 1 58%;
+    flex: 1 1 50%;
 }
 
 .cnc-image-card img {
