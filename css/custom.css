@@ -80,6 +80,42 @@ figure figcaption {
     line-height: 1.4;
 }
 
+/* CNC project: two images side by side with original aspect ratios */
+.cnc-image-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    width: 100%;
+    max-width: 100%;
+}
+
+.cnc-image-card {
+    flex: 1 1 0;
+    min-width: 0;
+    margin: 0;
+}
+
+.cnc-image-card-first {
+    flex: 0 1 55%;
+}
+
+.cnc-image-card:not(.cnc-image-card-first) {
+    flex: 0 1 45%;
+}
+
+.cnc-image-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 0.35rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+.cnc-image-card figcaption {
+    line-height: 1.4;
+}
+
 footer {
     background-color: var(--portfolio-light);
     border-top: 1px solid var(--portfolio-border);
@@ -107,6 +143,17 @@ footer {
         max-height: none;
         object-fit: contain;
     }
+
+    .cnc-image-row {
+        flex-direction: column;
+    }
+
+    .cnc-image-card,
+    .cnc-image-card-first,
+    .cnc-image-card:not(.cnc-image-card-first) {
+        width: 100%;
+        flex: 0 0 auto;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -128,53 +175,5 @@ footer {
 
     .lead {
         font-size: 1.1rem;
-    }
-}
-    /* CNC project: two images horizontally, with independent sizing */
-.cnc-image-row {
-    display: flex;
-    align-items: flex-start;
-    gap: 1.25rem;
-    width: 100%;
-    max-width: 1180px;
-}
-
-.cnc-image-card {
-    flex: 1 1 0;
-    min-width: 0;
-}
-
-.cnc-image-card-first {
-    flex: 0 1 120%;
-}
-
-.cnc-image-card:not(.cnc-image-card-first) {
-    flex: 1 1 50%;
-}
-
-.cnc-image-card img {
-    display: block;
-    width: 100%;
-    height: auto;
-    max-height: none;
-    object-fit: contain;
-    border-radius: 0.35rem;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
-}
-
-.cnc-image-card figcaption {
-    line-height: 1.4;
-}
-
-@media (max-width: 767.98px) {
-    .cnc-image-row {
-        flex-direction: column;
-    }
-
-    .cnc-image-card,
-    .cnc-image-card-first,
-    .cnc-image-card:not(.cnc-image-card-first) {
-        width: 100%;
-        flex: 0 0 auto;
     }
 }
