@@ -181,7 +181,54 @@
                     </div>
                     <div class="flex-shrink-0"><span class="text-primary">March 2026</span></div>
                 </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Physics-Informed Neural Networks for Vehicle Side-Slip Estimation</h3>
 
+                    <div class="subheading mb-3">
+                        Vehicle State Estimation and Machine Learning Case Study — TH Köln
+                    </div>
+
+                    <img src="assets/img/Pinns.png"
+                        alt="PINN and temporal convolutional network architecture for vehicle side-slip angle estimation"
+                        class="img-fluid rounded shadow project-image mb-3" />
+
+                    <p>
+                        Developed a physics-informed neural-network framework to estimate vehicle lateral velocity and side-slip angle when direct lateral-velocity measurements are unavailable. The model combines supervised learning with kinematic vehicle-model constraints and was evaluated using cross-vehicle racing data.
+                    </p>
+
+                    <p>
+                        Compared physics-loss scheduling strategies, collocation-point sampling methods and hyperparameter configurations using Ray Tune. The best supervised configuration used physics-cutoff scheduling and Latin Hypercube Sampling, achieving cross-vehicle lateral-velocity RMSE of approximately 0.0243 m/s and side-slip-angle RMSE of 0.0847°.
+                    </p>
+
+                    <p>
+                        Addressed self-loop error accumulation by developing hybrid PINN + RNN and PINN + Temporal Convolutional Network (TCN) corrector architectures. The best PINN + TCN configuration, using a 200-step temporal window, reduced autonomous lateral-velocity estimation RMSE from 0.462 m/s to 0.369 m/s: a 20.1% improvement over the standalone self-loop PINN.
+                    </p>
+
+                    <p>
+                        <strong>Tools:</strong> Python, PyTorch, Ray Tune, HyperOpt, Optuna, scikit-learn, LSTM/GRU, Temporal Convolutional Networks, K-Means, Latin Hypercube Sampling<br />
+                        <strong>Methods:</strong> Physics-Informed Neural Networks, Kinematic Vehicle Model, cross-vehicle validation, Bayesian hyperparameter optimization, physics-loss scheduling, self-loop state estimation<br />
+                        <strong>Dataset:</strong> Revs Vehicle Dynamics Database — 2013/2014 Targa Sixty-Six vehicle dynamics data
+                    </p>
+
+                    <!-- PDF REPORT LINK: keep this exactly here -->
+                    <p>
+                        <a href="docs/Pinn's/Scientific_Report_PINN_State_Estimation.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                            <i class="fas fa-file-pdf"></i> View Technical Report (PDF)
+                        </a>
+                    </p>
+
+                    <p class="mb-0">
+                        <strong>Outcome:</strong> Demonstrated a hybrid physics-data-driven approach for autonomous vehicle-state estimation, improving self-loop lateral-velocity estimation by 20.1% without relying on a direct lateral-velocity sensor.
+                    </p>
+                </div>
+
+                <div class="flex-shrink-0">
+                    <span class="text-primary">February 2026</span>
+                </div>
+            </div>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
                         <h3 class="mb-0">Industrial Data Modelling and PCA</h3>
@@ -193,7 +240,6 @@
                     </div>
                     <div class="flex-shrink-0"><span class="text-primary">June 2025</span></div>
                 </div>
-
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
                         <h3 class="mb-0">Bayesian Optimization for Noisy Functions</h3>
