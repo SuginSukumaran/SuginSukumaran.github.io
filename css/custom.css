@@ -185,3 +185,41 @@ footer {
         margin-right: auto;
         margin-left: 0;
     }
+    /* Contact information in the About section */
+.contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.45rem;
+}
+
+.contact-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    text-decoration: none;
+}
+
+.contact-item i {
+    color: var(--portfolio-accent);
+    font-size: 0.9em;
+}
+
+.contact-separator {
+    color: #adb5bd;
+    margin: 0 0.15rem;
+}
+
+@media (max-width: 767.98px) {
+    .contact-details {
+        gap: 0.6rem 0.8rem;
+    }
+
+    .contact-separator {
+        display: none;
+    }
+
+    .contact-item {
+        width: 100%;
+    }
+}
