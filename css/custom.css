@@ -130,40 +130,51 @@ footer {
         font-size: 1.1rem;
     }
 }
-    /* CNC project: show two original-aspect-ratio images side by side */
+    /* CNC project: two images horizontally, with independent sizing */
+.cnc-image-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    width: 100%;
+    max-width: 1180px;
+}
+
+.cnc-image-card {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.cnc-image-card-first {
+    flex: 0 1 60%;
+}
+
+.cnc-image-card:not(.cnc-image-card-first) {
+    flex: 1 1 58%;
+}
+
+.cnc-image-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+    border-radius: 0.35rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+.cnc-image-card figcaption {
+    line-height: 1.4;
+}
+
+@media (max-width: 767.98px) {
     .cnc-image-row {
-        display: flex;
-        align-items: flex-start;
-        gap: 1.25rem;
+        flex-direction: column;
+    }
+
+    .cnc-image-card,
+    .cnc-image-card-first,
+    .cnc-image-card:not(.cnc-image-card-first) {
         width: 100%;
-        max-width: 1180px;
+        flex: 0 0 auto;
     }
-
-    .cnc-image-card {
-        flex: 1 1 0;
-        min-width: 0;
-    }
-
-    .cnc-image-card img {
-        display: block;
-        width: 100%;
-        height: auto;
-        max-height: none;
-        object-fit: contain;
-        border-radius: 0.35rem;
-        box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
-    }
-
-    .cnc-image-card figcaption {
-        line-height: 1.4;
-    }
-
-    @media (max-width: 767.98px) {
-        .cnc-image-row {
-            flex-direction: column;
-        }
-
-        .cnc-image-card {
-            width: 100%;
-        }
-    }
+}
