@@ -180,7 +180,7 @@ footer {
     /* PCA project image: smaller than standard project images */
     .pca-project-image {
         width: 100%;
-        max-width: 200px;
+        max-width: 600px;
         height: auto;
         margin-right: auto;
         margin-left: 0;
