@@ -190,43 +190,47 @@
                 </div>
 
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">SINUMERIK ONE Virtual Commissioning</h3>
-                        <div class="subheading mb-3">CNC Virtual Commissioning — TH Köln</div>
-                        <p>
-                            Commissioned a virtual SINUMERIK ONE workflow from PLC to NC and HMI using Siemens TIA Portal V20 and Create MyVirtualMachine. Configured a simulated three-axis motion-control system using SINAMICS S120 and PROFINET I/O simulation.
-                        </p>
-                        <p>
-                            <strong>Tools:</strong> TIA Portal V20, SINUMERIK ONE, Create MyVirtualMachine, SINAMICS S120, WinCC, PROFINET<br />
-                            <strong>Topics:</strong> Virtual commissioning, CNC automation, PLC–NC–HMI integration, motion control
-                        </p>
-                    </div>
-                    <div class="flex-shrink-0">
-                        <span class="text-primary">2026</span>
-                    </div>
-                </div>
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">SINUMERIK ONE Virtual CNC Commissioning</h3>
+                    <div class="subheading mb-3">CNC Virtual Commissioning Case Study — TH Köln</div>
 
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">PV and Battery System Simulation</h3>
-                        <div class="subheading mb-3">Protection, Automation and Control of Electrical Energy Systems — TH Köln</div>
+                    <img src="assets/img/CNC_Report.png"
+                        alt="SINUMERIK ONE virtual commissioning of a three-axis CNC machine"
+                        class="img-fluid rounded shadow project-image mb-3" />
+
+                    <p>
+                        Commissioned and validated a virtual three-axis SINUMERIK ONE CNC system from PLC to NC and HMI using Siemens TIA Portal V20 and Create MyVirtualMachine. Configured and tested the linear axes MX1/X1, MY1/Y1 and MZ1/Z1 with SINAMICS S120 and simulated PROFINET I/O.
+                    </p>
+
+                    <p>
+                        Verified PLC–NC communication, axis-enable logic and machine functions using the virtual MCP483 milling panel. Functional tests confirmed bidirectional JOG motion, feedrate override at 50% and 100%, and correct emergency-stop behaviour, including alarm 3000, controlled axis braking and reset acknowledgement.
+                    </p>
+
+                    <p>
+                        Resolved a virtual-NCU detection issue during TIA Portal hardware download by diagnosing the PLCSIM Advanced network-adapter configuration and restoring TCP/IPv4 connectivity. The completed machine configuration, PLC software and NC data were saved as a reusable virtual commissioning project.
+                    </p>
+
+                    <p>
+                        <strong>Tools:</strong> Siemens TIA Portal V20, SINUMERIK ONE, Create MyVirtualMachine, PLCSIM Advanced, SINAMICS S120, SINUMERIK Operate, MCP483, PROFINET<br />
+                        <strong>Key validation:</strong> Three-axis JOG motion, feedrate override, E-stop and reset behaviour, PLC–NC interface, virtual NCU download and HMI operation<br />
+                        <strong>Topics:</strong> Virtual commissioning, CNC automation, motion control, PLC–NC–HMI integration, functional safety validation, troubleshooting
+                    </p>
                         <p>
-                            Modelled a residential photovoltaic-and-battery system in MATLAB/Simulink using the CARNOT toolbox. Investigated demand-side control, weather-data input, grid interaction and optimization logic for distributed energy resources.
-                        </p>
-                        <p>
-                            <strong>Tools:</strong> MATLAB, Simulink, CARNOT, Weather API, data visualization<br />
-                            <strong>Topics:</strong> Energy automation, demand response, distributed energy resources, optimization
-                        </p>
-                        <p>
-                            <a href="https://suginsukumaran.github.io/IEEE_PAC,Assignment.pdf" target="_blank" rel="noopener noreferrer">
-                                <i class="fas fa-file-pdf"></i> View IEEE Report (PDF)
+                            <a href="docs/CNC/CNC_Report.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                                <i class="fas fa-file-pdf"></i> View Technical Report (PDF)
                             </a>
                         </p>
-                    </div>
-                    <div class="flex-shrink-0">
-                        <span class="text-primary">April 2025</span>
-                    </div>
+                    <p class="mb-0">
+                        <strong>Outcome:</strong> Delivered a commissioned and reusable virtual CNC-machine project, demonstrating correct operation of three simulated linear axes and core machine-control functions before physical-machine deployment.
+                    </p>
                 </div>
+
+                <div class="flex-shrink-0">
+                    <span class="text-primary">March 2026</span>
+                </div>
+            </div>
 
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
