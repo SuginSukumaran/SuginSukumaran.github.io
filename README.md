@@ -2,7 +2,7 @@
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20Website-bd5d38?style=flat-square)](https://suginsukumaran.github.io/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Sugin%20Sukumaran-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/suginsugi/)
-[![Location](https://img.shields.io/badge/Location-Schwäbisch%20Hall%2C%20Germany-555555?style=flat-square)](https://suginsukumaran.github.io/)
+![Location](https://img.shields.io/badge/Location-Schwäbisch%20Hall%2C%20Germany-555555?style=flat-square)
 
 Automation & IT Master’s candidate at TH Köln with 4+ years of hands-on experience in industrial automation, PLC/DCS engineering, SCADA/HMI, industrial communication, OT/IIoT integration, electrical systems, commissioning, and industrial data workflows.
 
