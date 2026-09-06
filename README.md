@@ -1,4 +1,4 @@
-# Sugin Sukumaran | M.Eng. Automation & IT- Engineering Portfolio
+# Sugin Sukumaran | M.Eng. Automation & IT-Engineering Portfolio
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20Website-bd5d38?style=flat-square)](https://suginsukumaran.github.io/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Sugin%20Sukumaran-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/suginsugi/)
