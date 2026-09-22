@@ -275,3 +275,23 @@ footer {
     object-fit: contain;
     object-position: center top;
 }
+/* Full-width WebSupervisor screenshot below the two experience images */
+.experience-image-wide {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 1.5rem 0;
+}
+
+.experience-image-wide img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 0.35rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+.experience-image-wide figcaption {
+    line-height: 1.4;
+}
