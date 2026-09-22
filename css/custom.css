@@ -270,7 +270,7 @@ footer {
 /* Preserve the complete tall genset telematics diagram */
 .experience-image-card img.genset-telematics-image {
     width: 100%;
-    height: auto;
+    height: 600px;
     max-height: none;
     object-fit: contain;
     object-position: center top;
